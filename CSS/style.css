@@ -1,0 +1,439 @@
+/*Importar la tipología de la fuente que vayamos a usar aquí. Desde google fonts.*/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/*Color semintrasparente que usaremos más adelante*/
+:root{
+    --traslucido: rgba(218,165,32,0.7)
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+    
+
+}
+body{
+    background-color: darkmagenta;
+    background-image: url(../img/1620.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+/*Cabeceara de la web*/
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content : center;
+    align-items: center;
+    padding: 100px;
+}
+header{
+    position: absolute;
+        top: 0px;
+        left: 0px;
+        width:100%;
+        padding: 40px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+
+}
+header .logo{
+    color:black;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgb(202, 146, 4);
+    border-radius: 50%;
+    padding: 0 10px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+
+}
+header .logo:hover{
+    color: #fff;
+    background: black;
+    transition: 1s;
+
+}
+header .navbar{
+    position: relative;
+    display: flex;
+
+}
+header .navbar li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navbar li a{
+    text-decoration: whitesmoke;
+    color: goldenrod;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.9 em;
+    text-transform: uppercase;
+}
+header .navbar li a:hover{
+    border-bottom: 5px solid rgb(235, 135, 208);
+    padding: 2px;
+}
+
+/*Contenido de la web*/
+
+.contenido{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+.contenido .tituloBox{
+    position: relative;
+    max-width: 500 px;
+    text-align: center;
+
+}
+.contenido .tituloBox h2{
+font-size:  1.5em;
+text-transform: uppercase;
+color: white;
+
+}
+.contenido .tituloBox h2 span{
+    background: rgb(121, 8, 91);
+    color:  white;
+    padding: 0 10px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    border-radius: 50%;
+}
+.contenido .tituloBox p {
+
+    font-size:  1.8em;
+    line-height: 1.5;
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.contenido .tituloBox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(235, 135, 208);
+    background: #fff;
+    padding: 10px 20px;
+    margin-left: 20px;
+    border-radius: 50%;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.contenido .tituloBox a:hover{
+    color:#fff;
+    background: rgb(14, 13, 13);
+    transition: 0.5s;
+}
+
+/*Copyright*/
+
+.copyright{
+position: absolute;
+bottom: 0px;
+left:200px;
+margin-bottom: 20px;
+padding: 0 100px 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.copyright p{
+    color: black;
+    text-align: center;
+    margin-left: 75px;
+    background: rgb(202, 146, 4);
+    
+   
+}
+
+/*Redes sociales*/
+
+.redesSociales{
+    position: absolute;
+    right:0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items:last baseline;
+    padding: 0 100px 30px;
+    list-style: none;
+}
+.redesSociales li{
+    padding: 5px;
+}
+.redesSociales li a{
+    color:black;
+    font-size: 2.5em;
+    transition: 0.3s;
+
+}
+.redesSociales li:hover a{
+    color:rgb(235, 135, 208)
+
+}
+
+/*Formulario*/
+
+form {
+    width: 800px;
+    height: 800px;
+    border: 10px solid rgb(9, 9, 9);
+    color: white;
+    border-radius: 10px;
+    background-color: goldenrod;
+    margin: auto;
+    font-size: 15px;
+    display: block;
+}
+fieldset {
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    float: none;
+}
+
+legend {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 30px;
+    color: rgb(9, 9, 9);
+    margin: 5px;
+    font-weight: 600;
+}
+
+label {
+    display: block;
+    margin: 8px;
+}
+
+textarea {
+    width: 560px;
+    height: 200px;
+    font-family: "Titillium Web", sans-serif;
+}
+
+button {
+    border: 10px solid black;
+    background-color: black;
+    font-family: "Titillium Web", sans-serif;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+
+}
+
+/*CV*/
+
+.cvContainer{
+    border: 8px solid black;
+    background-color: goldenrod;
+    position: relative;
+    margin-right: 100px;
+    margin-top: 50px;
+    max-width:500px;
+    text-align: justify;
+    padding: 20px;
+}
+.headerCv{
+    display: inline;
+}
+.headerCv h2{
+    font-family: "Titillium Web", sans-serif;
+    font-size: 25px;
+    margin-left: 30px;
+}
+.info h3{
+    font-family: "Titillium Web", sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color: black;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.info ul li{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 650;
+    font-size: 25px;
+    margin-left: 30px;
+    text-decoration: underline;
+    text-decoration-color: black;
+    list-style-type: none;
+}
+
+.info p{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.info dl dt{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    margin-left: 30px;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.info dl dd{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+/*Quién soy*/
+
+.contenido .texto{
+    border-radius: 10px;
+    padding: 10px;
+    border: 5px solid black;
+    background-color: var(--traslucido);
+}
+.contenido .texto p{
+    font-family: "Titillium Web", sans-serif;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.contenido .texto ul li{
+    font-family: "Titillium Web", sans-serif;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+/*Proyectos destacados*/
+
+.contenedor-galeria {
+    display: grid;
+    place-items: center;
+    width: 300px;
+}
+
+.contenedor-galeria h1{
+    text-align:initial;
+    text-decoration: underline;
+    font-family:"Titillium Web", sans-serif; 
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 10px;
+    border: 5px solid black;
+    background-color: var(--traslucido);
+}
+.contenedor-galeria h4{
+    font-family:"Titillium Web", sans-serif;
+    text-transform: uppercase; 
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 5px solid black;
+    background-color: var(--traslucido);
+}
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    max-width: 400px;
+}
+
+.contenedor-imagen {
+    position: relative;
+    left: 0;
+    width: 300px;
+    border-radius: 5px;
+    height: 400px;
+    overflow: hidden;
+    background-color: #efefef;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 5px 12px rgb(0, 0, 0, 0.5);
+    flex: 0.25;
+}
+
+.contenedor-imagen img {
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.contenedor-imagen:hover {
+    flex: 2;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+/*Responsive*/
+
+@media(( min-width:576px) and (max-width: 992px)){
+    .logo{
+        margin-bottom: 50px;
+    }
+    .navbar{
+        margin-bottom: 50px;
+    }
+   
+    section{
+        padding: 50px;
+        
+    }
+    .contenido{
+        margin-top: 100px;
+    }
+    .contenido .tituloBox h2{
+        font-size: 3.5em;
+    }
+
+    .cvContainer{
+        width: 200%;
+    }
+    .Formulario{
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom:350px
+    }
+ 
+    .contenedor-galeria{
+        margin-top: 100px;
+
+    }
+    .copyright{
+        margin-left: 200px;
+        margin-bottom: -150px;
+
+        text-align: right;
+    }
+    .redesSociales{
+        align-items: left;
+        margin-right: 150px;
+        margin-bottom: -100px;
+
+    }
+
+}
